@@ -3,11 +3,12 @@ Summary(pl):	G³ówna biblioteka Javascriptu dla GTK-Webcore
 Name:		osb-jscore
 Version:	0.5.0
 Release:	0.1
-License:	GPL?
+License:	LGPL v2+
 Group:		Development/Libraries
 Source0:	http://dl.sourceforge.net/gtk-webcore/%{name}-%{version}.tar.gz
 # Source0-md5:	969cda923c419e35a319911b30b1d4b8
 URL:		http://gtk-webcore.sourceforge.net/
+BuildRequires:	libstdc++-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -21,6 +22,7 @@ Summary:	Header files for osb-jscore library
 Summary(pl):	Pliki nag³ówkowe biblioteki osb-jscore
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
+Requires:	libstdc++-devel
 
 %description devel
 This is the package containing the header files for osb-jscore.
@@ -61,7 +63,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc AUTHORS ChangeLog NEWS README THANKS TODO
+%doc AUTHORS README THANKS
 %attr(755,root,root) %{_libdir}/libjscore.so.*.*.*
 
 %files devel
