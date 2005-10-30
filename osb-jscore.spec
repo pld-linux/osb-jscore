@@ -4,7 +4,7 @@ Name:		osb-jscore
 Version:	0.5.0
 Release:	0.1
 License:	LGPL v2+
-Group:		Development/Libraries
+Group:		Libraries
 Source0:	http://dl.sourceforge.net/gtk-webcore/%{name}-%{version}.tar.gz
 # Source0-md5:	969cda923c419e35a319911b30b1d4b8
 URL:		http://gtk-webcore.sourceforge.net/
