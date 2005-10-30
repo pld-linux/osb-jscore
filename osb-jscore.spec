@@ -1,9 +1,5 @@
-#
-# Conditional build:
-%bcond_with	tests		# build with tests
-%bcond_without	tests		# build without tests
-#
 Summary:	GTK-Webcore Javascript Core library
+Summary(pl):	G³ówna biblioteka Javascriptu dla GTK-Webcore
 Name:		osb-jscore
 Version:	0.5.0
 Release:	0.1
@@ -15,24 +11,34 @@ URL:		http://gtk-webcore.sourceforge.net/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-GTK Webcore Core library
+GTK Webcore Javascript Core library.
+
+%description -l pl
+G³ówna biblioteka Javascriptu dla GTK-Webcore.
 
 %package devel
-Summary:	Development libraries and header files for osb-jscore library
+Summary:	Header files for osb-jscore library
+Summary(pl):	Pliki nag³ówkowe biblioteki osb-jscore
 Group:		Development/Libraries
-#Requires:	%{name} = %{version}-%{release}
+Requires:	%{name} = %{version}-%{release}
 
 %description devel
-This is the package containing the development libraries and header
-files for osb-jscore.
+This is the package containing the header files for osb-jscore.
+
+%description devel -l pl
+Ten pakiet zawiera pliki nag³ówkowe biblioteki osb-jscore.
 
 %package static
 Summary:	Static osb-jscore library
+Summary(pl):	Statyczna biblioteka osb-jscore
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 Static osb-jscore library.
+
+%description static -l pl
+Statyczna biblioteka osb-jscore.
 
 %prep
 %setup -q
@@ -56,13 +62,15 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog NEWS README THANKS TODO
-%{_libdir}/libjscore.so.*.*
+%attr(755,root,root) %{_libdir}/libjscore.so.*.*.*
 
 %files devel
+%defattr(644,root,root,755)
 %{_includedir}/osb/JavaScriptCore
-%{_libdir}/libjscore.so
+%attr(755,root,root) %{_libdir}/libjscore.so
 %{_libdir}/libjscore.la
-%{_libdir}/pkgconfig/osb-jscore.pc
+%{_pkgconfigdir}/osb-jscore.pc
 
 %files static
+%defattr(644,root,root,755)
 %{_libdir}/libjscore.a
