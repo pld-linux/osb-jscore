@@ -68,9 +68,10 @@ rm -rf $RPM_BUILD_ROOT
 
 %files devel
 %defattr(644,root,root,755)
-%{_includedir}/osb/JavaScriptCore
 %attr(755,root,root) %{_libdir}/libjscore.so
 %{_libdir}/libjscore.la
+%dir %{_includedir}/osb
+%{_includedir}/osb/JavaScriptCore
 %{_pkgconfigdir}/osb-jscore.pc
 
 %files static
