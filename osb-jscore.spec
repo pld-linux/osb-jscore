@@ -1,5 +1,5 @@
 Summary:	GTK-Webcore Javascript Core library
-Summary(pl):	G丑wna biblioteka Javascriptu dla GTK-Webcore
+Summary(pl.UTF-8):   G艂贸wna biblioteka Javascriptu dla GTK-Webcore
 Name:		osb-jscore
 Version:	0.5.0
 Release:	0.1
@@ -14,12 +14,12 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 GTK Webcore Javascript Core library.
 
-%description -l pl
-G丑wna biblioteka Javascriptu dla GTK-Webcore.
+%description -l pl.UTF-8
+G艂贸wna biblioteka Javascriptu dla GTK-Webcore.
 
 %package devel
 Summary:	Header files for osb-jscore library
-Summary(pl):	Pliki nag丑wkowe biblioteki osb-jscore
+Summary(pl.UTF-8):   Pliki nag艂贸wkowe biblioteki osb-jscore
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	libstdc++-devel
@@ -27,19 +27,19 @@ Requires:	libstdc++-devel
 %description devel
 This is the package containing the header files for osb-jscore.
 
-%description devel -l pl
-Ten pakiet zawiera pliki nag丑wkowe biblioteki osb-jscore.
+%description devel -l pl.UTF-8
+Ten pakiet zawiera pliki nag艂贸wkowe biblioteki osb-jscore.
 
 %package static
 Summary:	Static osb-jscore library
-Summary(pl):	Statyczna biblioteka osb-jscore
+Summary(pl.UTF-8):   Statyczna biblioteka osb-jscore
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 Static osb-jscore library.
 
-%description static -l pl
+%description static -l pl.UTF-8
 Statyczna biblioteka osb-jscore.
 
 %prep
