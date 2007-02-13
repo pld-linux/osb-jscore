@@ -1,5 +1,5 @@
 Summary:	GTK-Webcore Javascript Core library
-Summary(pl.UTF-8):   Główna biblioteka Javascriptu dla GTK-Webcore
+Summary(pl.UTF-8):	Główna biblioteka Javascriptu dla GTK-Webcore
 Name:		osb-jscore
 Version:	0.5.0
 Release:	0.1
@@ -19,7 +19,7 @@ Główna biblioteka Javascriptu dla GTK-Webcore.
 
 %package devel
 Summary:	Header files for osb-jscore library
-Summary(pl.UTF-8):   Pliki nagłówkowe biblioteki osb-jscore
+Summary(pl.UTF-8):	Pliki nagłówkowe biblioteki osb-jscore
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	libstdc++-devel
@@ -32,7 +32,7 @@ Ten pakiet zawiera pliki nagłówkowe biblioteki osb-jscore.
 
 %package static
 Summary:	Static osb-jscore library
-Summary(pl.UTF-8):   Statyczna biblioteka osb-jscore
+Summary(pl.UTF-8):	Statyczna biblioteka osb-jscore
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
