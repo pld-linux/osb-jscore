@@ -1,12 +1,12 @@
 Summary:	GTK-Webcore Javascript Core library
 Summary(pl.UTF-8):	Główna biblioteka Javascriptu dla GTK-Webcore
 Name:		osb-jscore
-Version:	0.5.0
+Version:	0.5.2
 Release:	0.1
 License:	LGPL v2+
 Group:		Libraries
 Source0:	http://dl.sourceforge.net/gtk-webcore/%{name}-%{version}.tar.gz
-# Source0-md5:	969cda923c419e35a319911b30b1d4b8
+# Source0-md5:	355a7f26a0bb590f688371e57c711fba
 URL:		http://gtk-webcore.sourceforge.net/
 BuildRequires:	libstdc++-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
